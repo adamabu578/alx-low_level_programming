@@ -4,24 +4,22 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	char c;
+#include <stdio.h>
 
-	char d;
+int main() {
+    char lowercase;
+    char uppercase;
 
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			d++;
-		}
-	putchar('\n');
-	return (0);
+    printf("Alphabet in lowercase:\n");
+    for (lowercase = 'a'; lowercase <= 'z'; lowercase++) {
+        putchar(lowercase);
+    }
+
+    printf("\n\nAlphabet in uppercase:\n");
+    for (uppercase = 'A'; uppercase <= 'Z'; uppercase++) {
+        putchar(uppercase);
+    }
+
+    putchar('\n');
+    return 0;
 }
