@@ -3,25 +3,27 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: Always return 0 (Success)
+ * Return: Alway 0 (Success)
  */
-int main(void)
-{
-	int n;
+#include <stdio.h>
 
-	int m;
+int main() {
+    int n;
 
-	srand(time(0));
-	n = rand() % 201 - 100;
-	m = n % 10;
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-	printf("Last digit 0f %d is %d and is", n, m);
-	if (m > 5) 
-		printf("greater than 5\n");
-	else if (m == 0)
-		printf("0\n");
-	else
-		printf("less than 6 and not 0\n");
+    int lastDigit = n % 10;
+    printf("Last digit of %d is ", n);
 
-	return (0);
+    if (lastDigit > 5) {
+        printf("%d and is greater than 5\n", lastDigit);
+    } else if (lastDigit == 0) {
+        printf("%d and is 0\n", lastDigit);
+    } else {
+        printf("%d and is less than 6 and not 0\n", lastDigit);
+    }
+
+    return 0;
 }
+
