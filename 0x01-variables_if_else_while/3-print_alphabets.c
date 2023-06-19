@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: to print upper and lowercase alphabets
+ * Description: 'To print upper and lower alphabet
  * Return: Always 0 (success)
  */
 int main(void)
@@ -14,13 +14,13 @@ int main(void)
 	d = 'A';
 	while
 	c <= 'z') {
-	       	putchar(c);
+		putchar(c);
 			c++;
-		}
-	while 
-	(d <= 'Z') { 
+	}
+	while
+		(d <= 'Z') {
 			putchar(d);
-			d++;
+		d++;
 		}
 	putchar('\n');
 	return (0);
