@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: to print upper and lowercase alphabets
-  Return: Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
 	d = 'A';
 	while
 
-		(c <= 'z'){
+		(c <= 'z') { 
 			putchar(c);
 			c++;
 		}
 	while
-		(d <= 'Z'){
+		(d <= 'Z') { 
 			putchar(d);
 			d++;
-		}	
+		}
 	putchar('\n');
 	return (0);
 }
