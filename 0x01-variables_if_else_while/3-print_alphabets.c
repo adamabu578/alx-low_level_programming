@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'To print upper and lower alphabet
- * Return: Always 0 (success)
+ *
+ * Remain: Always 0 (success)
  */
+
 int main(void)
 {
 	char c;
@@ -13,16 +14,15 @@ int main(void)
 	c = 'a';
 	d = 'A';
 	while
-	c <= 'z') {
-		putchar(c);
+		(c <= 'z') {
+			putchar(c);
 			c++;
-	}
+		}
 	while
 		(d <= 'Z') {
-			putchar(d);
-		d++;
+			putchar(c);
+			d++;
 		}
 	putchar('\n');
 	return (0);
 }
-
