@@ -1,52 +1,29 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
+#include "main.h"
 /**
-  * string_nconcat - ...
-  * @s1: ...
-  * @s2: ...
-  * @n: ...
-  *
-  * Return: ...
-  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+ * _strdup - duplicate to new memory space location
+ * @str: char
+ * Return: 0
+ */
+char *_strdup(char *str)
 {
-	unsigned int i = 0, j = 0, k = 0, l = 0;
-	char *str;
+	char *aaa;
+	int i, r = 0;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-
-	while (s1[i])
-		i++;
-
-	while (s2[k])
-		k++;
-
-	if (n >= k)
-		l = i + k;
-	else
-		l = i + n;
-
-	str = malloc(sizeof(char) * l + 1);
 	if (str == NULL)
 		return (NULL);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
 
-	k = 0;
-	while (j < l)
-	{
-		if (j <= i)
-			str[j] = s1[j];
+	aaa = malloc(sizeof(char) * (i + 1));
 
-		if (j >= i)
-		{
-			str[j] = s2[k];
-			k++;
-		}
-		j++;
-	}
-	str[j] = '\0';
-	return (str);
+	if (aaa == NULL)
+		return (NULL);
+
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
+
+	return (aaa);
 }
