@@ -1,18 +1,12 @@
 #include <stdio.h>
-#include "dog.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+  * main - Prints the file name of the program
+  *
+  * Return: Always zero
+  */
 int main(void)
 {
-    struct dog my_dog;
-
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    print_dog(&my_dog);
-    return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
